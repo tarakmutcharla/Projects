@@ -1,0 +1,10 @@
+
+<div style="width:75%;margin:auto;padding-top: 40px;">
+<ul>
+  <li style="width:80%;padding-right: 700px;"><a><b>List Name </b><p>Total: {{ count }}</p></a></li>
+  <li [routerLink]="['/new']" style="cursor: pointer;"><a>&#10133;</a></li>
+  <li style="padding-right:40px;float: right;cursor: pointer;"><a (click)=toggle()><i class="fa fa-caret-square-o-down"></i></a></li>
+</ul>
+<div *ngIf="show">
+<router-outlet></router-outlet></div>
+</div>

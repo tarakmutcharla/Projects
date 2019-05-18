@@ -1,0 +1,6 @@
+<li><div (click)= "showdel()" style="float:right;font-size:40px;cursor: pointer;padding-right: 30px;"><i class="fa fa-ellipsis-v"></i></div>
+<div *ngIf = "del" style="float:right;font-size:40px;cursor: pointer;padding-right: 100px;"><i (click)="remove(num)" class="fa fa-trash-o"></i></div>
+<img [src]="holder.img" />
+<h3>{{ holder.name }}</h3>
+<p>{{ holder.description }}</p>
+<p style="font-size: 15px;"><i class="fa fa-calendar"></i>  {{ holder.date }}</p></li>

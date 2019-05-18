@@ -1,0 +1,18 @@
+
+<div>
+  <form>
+    <label for="img">image</label>
+    <input #txtEl type="text" id="img" name="img" placeholder="Img Path">
+
+    <label for="name">Name</label>
+    <input #nameEl type="text" id="name" name="name" placeholder="Name..">
+
+    <label for="desc">Description</label>
+    <input #desEl type="text" id="desc" name="desc" placeholder="Description">
+
+    <label for="date">Date</label>
+    <input #dateEl type="text" id="date" name="date" placeholder="Date">
+
+    <input (click)="addlist(txtEl,nameEl,desEl,dateEl)" type="submit" value="Submit">
+  </form>
+</div>
